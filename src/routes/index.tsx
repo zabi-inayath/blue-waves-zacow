@@ -72,35 +72,80 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/30 to-ink/90" />
         </div>
 
-        <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-6 pb-16 pt-40 md:px-12 md:pb-20 md:pt-48">
+        <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-6 pb-16 pt-40 md:px-12 md:pb-20 md:pt-38">
           <div className="mx-auto w-full max-w-[1400px]">
-            <div className="max-w-3xl fade-up">
-              <div className="flex items-center gap-4">
-                <span className="h-px w-12 bg-gold" />
-                <span className="eyebrow text-bone/70">Est. 2009 · Chennai</span>
+            <div className="mx-auto flex max-w-6xl flex-col items-center text-center fade-up">
+
+              {/* Badge */}
+              <div className="flex items-center gap-3">
+                <span className="rounded-lg border border-bone/20 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.25em] text-bone/70 backdrop-blur">
+                  Est. 2009 • Chennai
+                </span>
               </div>
-              <h1 className="mt-6 font-serif text-5xl leading-[1.02] text-bone md:text-7xl lg:text-8xl">
-                Chennai's trusted<br />
-                <span className="italic text-gold-soft">luxury</span> real estate<br />
-                consultants.
+
+              {/* Heading */}
+              <h1 className="mt-8 text-5xl dm-sans leading-[1.02] text-bone md:text-7xl lg:text-8xl">
+                Chennai's trusted
+                <span className="italic text-gold-soft"> luxury</span>
+                <br />
+                real estate consultants.
               </h1>
-              <p className="mt-8 max-w-xl text-base leading-relaxed text-bone/70 md:text-lg">
-                Specialists in high-end residential sales, rentals and
-                investments for HNIs, NRIs, corporates and MNC executives.
+
+              {/* Description */}
+              <p className="mt-8 max-w-3xl text-base leading-relaxed text-bone/70 md:text-lg">
+                Specialists in high-end residential sales, rentals and investments
+                for HNIs, NRIs, corporates and MNC executives.
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Link to="/contact" className="btn-primary">
+              {/* Buttons */}
+              <div className="my-12 flex flex-wrap items-center justify-center gap-5">
+
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center gap-3 rounded-xl bg-[#1C3C85] px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#2a4aa3]"
+                >
                   Schedule Consultation
+                  <svg
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 12h14m-6-6 6 6-6 6"
+                    />
+                  </svg>
                 </Link>
-                <Link to="/contact" className="btn-outline text-bone">
-                  <span>Submit Requirement</span>
+
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center gap-3 rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
+                >
+                  Submit Requirement
+                  <svg
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 12h14m-6-6 6 6-6 6"
+                    />
+                  </svg>
                 </Link>
+
               </div>
+
             </div>
           </div>
 
           <div className="mx-auto w-full max-w-[1400px]">
-            <div className="grid grid-cols-2 gap-8 border-t border-bone/15 pt-8 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-8 border-t border-bone/15 pt-8 md:grid-cols-4 justify-center text-center">
               {[
                 ["15+", "Years of Expertise"],
                 ["1,200+", "Curated Transactions"],
@@ -108,7 +153,7 @@ function Home() {
                 ["100%", "Verified Listings"],
               ].map(([n, l]) => (
                 <div key={l}>
-                  <div className="font-serif text-3xl text-gold md:text-4xl">{n}</div>
+                  <div className="poppins text-3xl text-gold md:text-4xl">{n}</div>
                   <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-bone/50">
                     {l}
                   </div>

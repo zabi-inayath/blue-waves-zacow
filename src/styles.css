@@ -68,9 +68,11 @@
   * {
     border-color: var(--color-border);
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -78,11 +80,16 @@
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
   }
+
   ::selection {
     background: var(--gold-soft);
     color: var(--ink);
@@ -100,18 +107,17 @@
 
 @utility hairline {
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--color-border) 20%,
-    var(--color-border) 80%,
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      var(--color-border) 20%,
+      var(--color-border) 80%,
+      transparent);
 }
 
 @utility gold-underline {
   position: relative;
 }
+
 @utility gold-underline {
   &::after {
     content: "";
@@ -139,6 +145,7 @@
   border: 1px solid var(--ink);
   transition: all 0.4s ease;
 }
+
 @utility btn-primary {
   &:hover {
     background: var(--gold);
@@ -162,11 +169,13 @@
   border: 1px solid currentColor;
   transition: all 0.4s ease;
 }
+
 @utility btn-outline {
   &:hover {
     background: currentColor;
   }
-  &:hover > * {
+
+  &:hover>* {
     color: var(--background);
   }
 }
@@ -176,15 +185,151 @@
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slowZoom {
-  from { transform: scale(1); }
-  to { transform: scale(1.08); }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
 }
 
 @utility slow-zoom {
   animation: slowZoom 18s ease-out forwards;
+}
+
+@font-face {
+  font-family: 'Hagrid';
+  src: url('/fonts/Hagrid-Regular-trial.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* poppins font*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url('/fonts/LeagueSpartan-Bold.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DXRigraf-SemiBold';
+  src: url('/fonts/DXRigraf-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DXRigraf-Light';
+  src: url('/fonts/DXRigraf-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DXRigraf-Thin';
+  src: url('/fonts/DXRigraf-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk-SemiBold';
+  src: url('/fonts/SpaceGrotesk-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ligema-DEMO';
+  src: url('/fonts/Ligema-DEMO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MiguErsans-Regular';
+  src: url('/fonts/miguersansregular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Enhanced smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.scriptregular {
+  font-family: "Style Script";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hagrid {
+  font-family: 'Hagrid', sans-serif;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dm-sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.league-spartan {
+  font-family: 'LeagueSpartan', sans-serif;
+}
+
+.MiguErsansRegular {
+  font-family: 'MiguErsans-Regular', sans-serif;
+}
+
+.Ligema {
+  font-family: 'Ligema-DEMO', sans-serif;
+}
+
+.SpaceGrotesk {
+  font-family: 'SpaceGrotesk-SemiBold', sans-serif;
+}
+
+.DXRigraf {
+  font-family: 'DXRigraf-SemiBold', sans-serif;
+}
+
+.DXRigraf-light {
+  font-family: 'DXRigraf-Light', sans-serif;
+}
+
+.DXRigraf-Thin {
+  font-family: 'DXRigraf-Thin', sans-serif;
 }
