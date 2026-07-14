@@ -1,0 +1,1 @@
+var e=`/assets/interior-3-CoBzC3eI.jpg`;export{e as t};

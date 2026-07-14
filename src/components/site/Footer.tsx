@@ -57,19 +57,24 @@ export function Footer() {
             <div className="eyebrow text-bone/50">Contact</div>
             <ul className="mt-6 space-y-4 text-sm text-bone/70">
               <li className="flex gap-3">
-                <FiMapPin className="mt-0.5 shrink-0 text-gold" />
-                <span>Boat Club Road, RA Puram, Chennai — 600028</span>
+                <FiMapPin className="mt-1.5 shrink-0 text-gold" />
+                <span>No. 11/38 Status Quo Building, Strerling Road,<br />Nungambakkum, Chennai - 600 0034</span>
+              </li>
+              <li className="flex gap-3">
+                <FiPhone className="mt-1 shrink-0 text-gold" />
+                <div className="flex flex-col gap-1.5">
+                  <a href="tel:+919841603932" className="hover:text-gold">
+                    Eliyas: +91 98416 03932
+                  </a>
+                  <a href="tel:+919789811111" className="hover:text-gold">
+                    Naina Mohamed: +91 97898 11111
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
-                <FiPhone className="text-gold" />
-                <a href="tel:+919000000000" className="hover:text-gold">
-                  +91 90000 00000
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <FiMail className="text-gold" />
-                <a href="mailto:hello@bluewaveestate.in" className="hover:text-gold">
-                  hello@bluewaveestate.in
+                <FiMail className="shrink-0 text-gold" />
+                <a href="mailto:bluewaveestates06@gmail.com" className="hover:text-gold break-all">
+                  bluewaveestates06@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

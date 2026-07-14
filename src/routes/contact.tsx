@@ -45,27 +45,42 @@ function Contact() {
           </div>
 
           <aside className="space-y-6 md:col-span-4 md:col-start-9">
-            <InfoRow icon={FiMapPin} title="Studio">
-              Boat Club Road, RA Puram<br />Chennai — 600028
+            <InfoRow icon={FiMapPin} title="Address">
+              No. 11/38 Status Quo Building,<br />Strerling Road, Nungambakkum,<br />Chennai - 600 0034
             </InfoRow>
             <InfoRow icon={FiPhone} title="Call">
-              <a href="tel:+919000000000" className="hover:text-gold">
-                +91 90000 00000
-              </a>
+              <div className="flex flex-col gap-2">
+                <a href="tel:+919841603932" className="hover:text-gold">
+                  Eliyas: +91 98416 03932
+                </a>
+                <a href="tel:+919789811111" className="hover:text-gold">
+                  Naina Mohamed: +91 97898 11111
+                </a>
+              </div>
             </InfoRow>
             <InfoRow icon={FaWhatsapp} title="WhatsApp">
-              <a
-                href="https://wa.me/919000000000"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-gold"
-              >
-                +91 90000 00000
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://wa.me/919841603932"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-gold"
+                >
+                  Eliyas: +91 98416 03932
+                </a>
+                <a
+                  href="https://wa.me/919789811111"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-gold"
+                >
+                  Naina Mohamed: +91 97898 11111
+                </a>
+              </div>
             </InfoRow>
             <InfoRow icon={FiMail} title="Email">
-              <a href="mailto:hello@bluewaveestate.in" className="hover:text-gold">
-                hello@bluewaveestate.in
+              <a href="mailto:bluewaveestates06@gmail.com" className="hover:text-gold break-all">
+                bluewaveestates06@gmail.com
               </a>
             </InfoRow>
             <InfoRow icon={FiClock} title="Hours">

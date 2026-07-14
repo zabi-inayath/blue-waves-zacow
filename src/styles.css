@@ -333,3 +333,21 @@ html {
 .DXRigraf-Thin {
   font-family: 'DXRigraf-Thin', sans-serif;
 }
+
+
+@keyframes testimonials {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-testimonials {
+  animation: testimonials 15s linear infinite;
+}
+
+.animate-testimonials:hover {
+  animation-play-state: paused;
+}
