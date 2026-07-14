@@ -413,7 +413,7 @@ function Home() {
         <div className="mb-12 text-center">
 
           <span className="inline-flex rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#1C3C85]">
-            FOCUS AREAS
+            FOCUS AREA
           </span>
 
           <h2 className="mt-3 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl">
@@ -532,7 +532,7 @@ function Home() {
       </Section>
 
       {/* Testimonials */}
-      <Section className="bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] text-bone">
+      <section className="bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] text-bone py-20">
         <div className="mb-16 text-center">
           <span className="text-xs uppercase tracking-[0.25em] text-gold-soft font-semibold bg-white/10 px-3.5 py-1.5 rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5">
             TESTIMONIALS
@@ -580,9 +580,7 @@ function Home() {
           </div>
 
         </div>
-      </Section>
-
-
+      </section>
 
       {/* CTA */}
       <Section>
