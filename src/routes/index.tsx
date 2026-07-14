@@ -492,21 +492,24 @@ function Home() {
         <div className="grid gap-12 md:grid-cols-12 md:gap-16 items-center">
           <div className="md:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] w-full">
-              <img
+             
+              <video
+                src="/f6ea7f7d8886f889e7e7491a8ed3b9f8.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-full w-full object-cover"
+              />
+            </div>
+            {/* <div className="absolute -bottom-10 -right-6 hidden sm:block w-1/2 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+               <img
                 src={interior1}
                 alt="Chennai luxury interior main"
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
-            </div>
-            <div className="absolute -bottom-10 -right-6 hidden sm:block w-1/2 aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-              <img
-                src={interior3}
-                alt="Chennai luxury interior detail"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col justify-center md:col-span-5 md:col-start-8">
             <span className="text-xs uppercase tracking-[0.25em] text-[#1C3C85] font-semibold bg-[#1C3C85]/10 px-3.5 py-1.5 rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5 self-start">
