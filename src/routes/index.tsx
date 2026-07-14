@@ -531,6 +531,57 @@ function Home() {
         </div>
       </Section>
 
+      {/* Professional Credentials */}
+      <Section className="bg-[#f7f9fc]">
+        <div className="mb-16">
+          <span className="text-xs uppercase tracking-[0.25em] text-[#1C3C85] font-semibold bg-[#1C3C85]/10 px-3.5 py-1.5 rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5">
+            CREDENTIALS
+          </span>
+          <h2 className="mt-6 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl">
+            Professional <span className="blue-wave-3 font-normal">Credentials</span>
+          </h2>
+          <p className="mt-4 mx-auto max-w-2xl text-muted-foreground text-sm font-semibold uppercase tracking-wider">
+            TNRERA Registered Real Estate Agent – Registration No: TN/RERA/0323/2025
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="rounded-2xl border border-border/50 bg-white p-8 transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+            <h3 className="font-semibold text-lg text-foreground mb-4 flex items-center gap-3">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20 blue-wave-2">
+                <FiCheck className="h-4 w-4" />
+              </span>
+              TNRERA Registered
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              We are a TNRERA Registered Real Estate Agent, committed to conducting every real estate transaction with transparency, integrity, and full compliance with the Real Estate (Regulation and Development) Act (RERA). Our registration reflects our commitment to ethical practices and protecting the interests of our clients.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border/50 bg-white p-8 transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+            <h3 className="font-semibold text-lg text-foreground mb-4 flex items-center gap-3">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20 blue-wave-2">
+                <FiCheck className="h-4 w-4" />
+              </span>
+              Member – REAP
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              We are a proud member of the Real Estate Agents Association of India (REAP), a professional association dedicated to promoting ethical business practices, industry collaboration, continuous learning, and higher standards in the real estate profession.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border/50 bg-white p-8 transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+            <h3 className="font-semibold text-lg text-foreground mb-4 flex items-center gap-3">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20 blue-wave-2">
+                <FiCheck className="h-4 w-4" />
+              </span>
+              Member – NAR India
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              As a member of NAR India (National Association of Realtors – India), we are part of a nationwide network of trusted real estate professionals committed to integrity, professionalism, and a strict code of ethics. This enables us to provide our clients with reliable advice, wider market access, and high-quality service.
+            </p>
+          </div>
+        </div>
+      </Section>
+
       {/* Testimonials */}
       <section className="bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] text-bone py-20">
         <div className="mb-16 text-center">

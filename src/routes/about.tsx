@@ -81,6 +81,40 @@ function About() {
         </div>
       </Section>
 
+      <Section className="bg-muted/50 border-y border-border">
+        <div className="grid gap-16 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <SectionHeader eyebrow="Credentials" title="Professional Credentials." />
+            <p className="mt-4 text-sm text-muted-foreground font-semibold">
+              TNRERA Registered Real Estate Agent<br />
+              Reg No: TN/RERA/0323/2025
+            </p>
+          </div>
+          <div className="md:col-span-7 md:col-start-6">
+            <div className="grid gap-12 sm:grid-cols-2">
+              <div>
+                <h3 className="font-serif text-xl text-foreground">TNRERA Registered</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  We are a TNRERA Registered Real Estate Agent, committed to conducting every real estate transaction with transparency, integrity, and full compliance with the Real Estate (Regulation and Development) Act (RERA). Our registration reflects our commitment to ethical practices and protecting the interests of our clients.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-serif text-xl text-foreground">Member – REAP</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  We are a proud member of the Real Estate Agents Association of India (REAP), a professional association dedicated to promoting ethical business practices, industry collaboration, continuous learning, and higher standards in the real estate profession.
+                </p>
+              </div>
+              <div className="sm:col-span-2">
+                <h3 className="font-serif text-xl text-foreground">Member – NAR India</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground max-w-2xl">
+                  As a member of NAR India (National Association of Realtors – India), we are part of a nationwide network of trusted real estate professionals committed to integrity, professionalism, and a strict code of ethics. This enables us to provide our clients with reliable advice, wider market access, and high-quality service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       <Section className="bg-secondary">
         <div className="grid gap-16 md:grid-cols-3">
           {[
