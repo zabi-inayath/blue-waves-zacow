@@ -43,6 +43,24 @@ export function Footer() {
               discerning clients since 2009.
             </p>
 
+            <div className="mt-6 space-y-2 text-xs text-white/80 border-t border-white/10 pt-6 max-w-sm">
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]"></span>
+                <span>TNRERA Registered Real Estate Agent</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]"></span>
+                <span>Member - REAP</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]"></span>
+                <span>Member - NAR India</span>
+              </div>
+              <div className="mt-2 text-white/95 font-semibold text-[10px] uppercase tracking-wider pl-3.5 border-l border-[#D4AF37]">
+                Reg No: TNRERA - TN/RERA/0323/2025
+              </div>
+            </div>
+
             <div className="mt-8 flex gap-3">
               {[FaInstagram, FaLinkedinIn, FaFacebookF, FaWhatsapp].map((Icon, i) => (
                 <a

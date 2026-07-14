@@ -541,37 +541,34 @@ function Home() {
             Client Voices | <span className="blue-wave-2 font-normal">Trusted, quietly.</span>
           </h2>
         </div>
-        <div className="relative mt-10 sm:mt-16 overflow-hidden">
-  <div className="flex animate-testimonials gap-4 sm:gap-6 md:gap-8">
-    {[...testimonials, ...testimonials].map((item, index) => (
-      <div
-        key={index}
-        // min-w-[85vw] ensures the card fits nicely on mobile screens 
-        // while leaving a little peek of the next card.
-        // shrink-0 prevents flexbox from squishing the cards.
-        className="shrink-0 min-w-[85vw] sm:min-w-[320px] md:min-w-[350px] rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 md:p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#D4AF37]/30 hover:bg-white/10"
-      >
-        <div className="flex gap-1 blue-wave-2 text-xs sm:text-sm">
-          ★★★★★
+        <div className="relative mt-16 overflow-hidden">
+          <div className="flex animate-testimonials gap-4 md:gap-8">
+            {[...testimonials, ...testimonials].map((item, index) => (
+              <div
+                key={index}
+                className="min-w-[280px] sm:min-w-[340px] md:min-w-[420px] rounded-2xl md:rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 md:p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#D4AF37]/30 hover:bg-white/10"
+              >
+                <div className="flex gap-1 blue-wave-2 text-xs sm:text-sm">
+                  ★★★★★
+                </div>
+
+                <blockquote className="mt-4 sm:mt-6 font-serif text-lg sm:text-xl md:text-2xl leading-relaxed text-white">
+                  "{item.quote}"
+                </blockquote>
+
+                <div className="mt-6 sm:mt-8 md:mt-10">
+                  <h4 className="text-sm sm:text-base font-semibold text-white">
+                    {item.author}
+                  </h4>
+
+                  <p className="mt-1 text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.15em] md:tracking-[0.25em] text-white/50">
+                    {item.location}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-
-        <blockquote className="mt-4 sm:mt-6 font-serif text-lg sm:text-xl md:text-2xl leading-relaxed text-white">
-          "{item.quote}"
-        </blockquote>
-
-        <div className="mt-6 sm:mt-8 md:mt-10">
-          <h4 className="font-semibold text-white text-sm sm:text-base">
-            {item.author}
-          </h4>
-
-          <p className="mt-1 text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white/50">
-            {item.location}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
       </section>
 
       {/* CTA */}
