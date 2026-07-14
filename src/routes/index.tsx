@@ -187,7 +187,7 @@ function Home() {
                 ["100%", "Verified Listings"],
               ].map(([n, l]) => (
                 <div key={l}>
-                  <div className="poppins text-3xl text-gold md:text-4xl">{n}</div>
+                  <div className="poppins text-3xl text-white md:text-4xl">{n}</div>
                   <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-bone/50">
                     {l}
                   </div>
@@ -216,7 +216,7 @@ function Home() {
               We don't simply broker
               <br />
 
-              <span className="italic text-gold">
+              <span className="italic blue-wave-3">
                 luxury properties.
               </span>
 
@@ -336,11 +336,11 @@ function Home() {
       <Section className="bg-[#f7f9fc]">
         <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
           <div>
-            <span className="text-xs uppercase tracking-[0.25em] text-[#1C3C85] font-semibold bg-[#1C3C85]/10 px-3.5 py-1.5 rounded-full">
+            <span className="text-xs uppercase tracking-[0.25em] text-[#1C3C85] font-semibold bg-[#1C3C85]/10 px-3.5 py-1.5 rounded-lg">
               PRACTICE
             </span>
             <h2 className="mt-6 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl">
-              Four disciplines, <span className=" text-gold font-normal">one standard.</span>
+              Four disciplines, <span className="blue-wave-3 font-normal">one standard.</span>
             </h2>
           </div>
           <Link
@@ -387,17 +387,17 @@ function Home() {
             />
           </div>
           <div className="flex flex-col justify-center bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] p-10 text-bone md:p-16 lg:p-24">
-            <span className="text-xs uppercase tracking-[0.25em] text-gold-soft font-semibold bg-white/10 px-3.5 py-1.5 rounded-full self-start">
+            <span className="text-xs uppercase tracking-[0.25em] blue-wave-2 font-semibold bg-white/10 px-3.5 py-1.5 rounded-full self-start">
               WHY BLUE WAVE
             </span>
             <h2 className="mt-6 text-3xl font-light hagrid leading-tight text-white md:text-4xl">
               Discretion, network and a <br />
-              <span className="text-gold-soft font-normal">curator's eye.</span>
+              <span className="blue-wave-2 font-normal">curator's eye.</span>
             </h2>
             <ul className="mt-10 grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
               {trust.map((t) => (
                 <li key={t} className="flex items-center gap-3.5 text-sm font-medium text-white/90 bg-white/5 border border-white/10 rounded-xl p-3.5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20 blue-wave-2">
                     <FiCheck className="h-4 w-4" />
                   </div>
                   <span className="leading-snug">{t}</span>
@@ -417,7 +417,7 @@ function Home() {
           </span>
 
           <h2 className="mt-3 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl">
-            Where we work, the <span className="text-gold font-normal"><br />addresses that matter</span> in Chennai.
+            Where we work, the <span className="blue-wave-3 font-normal"><br />addresses that matter</span> in Chennai.
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-muted-foreground text-sm">
             Exclusive access to premium residential properties and corporate spaces across Chennai's most coveted micro-markets.
@@ -445,11 +445,11 @@ function Home() {
                   <h4 className="text-sm font-semibold poppins uppercase tracking-[0.15em] text-foreground group-hover:text-[#1C3C85] transition-colors duration-500">
                     {a}
                   </h4>
-                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-1">
+                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-1 blue-wave-3">
                     Chennai
                   </p>
                 </div>
-                <HiLocationMarker className="text-muted-foreground group-hover:text-[#1C3C85] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-500" />
+                <HiLocationMarker className="text-muted-foreground blue-wave-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-500" />
               </div>
             </div>
           ))}
@@ -464,7 +464,7 @@ function Home() {
           </span>
 
           <h2 className="mt-6 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl">
-            Trusted <span className="text-gold font-normal">Builder Partners</span>
+            Trusted <span className="blue-wave-3 font-normal">Builder Partners</span>
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-muted-foreground text-sm">
             An ecosystem of India's most respected developers, ensuring structural integrity and premium finishes.
@@ -515,7 +515,7 @@ function Home() {
 
             <h2 className="mt-6 text-4xl font-light dm-sans leading-tight text-foreground md:text-5xl">
               Turnkey interiors, <br />
-              delivered with <span className="italic text-gold font-normal">rigour.</span>
+              delivered with <span className="italic blue-wave-3 font-normal">rigour.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-base leading-relaxed">
               From modular kitchens and lighting to complete villa fit-outs —
@@ -534,52 +534,44 @@ function Home() {
       {/* Testimonials */}
       <section className="bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] text-bone py-20">
         <div className="mb-16 text-center">
-          <span className="text-xs uppercase tracking-[0.25em] text-gold-soft font-semibold bg-white/10 px-3.5 py-1.5 rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5">
+          <span className="text-xs uppercase tracking-[0.25em] blue-wave-2 font-semibold bg-white/10 px-3.5 py-1.5 rounded-lg border border-[#1C3C85]/20 bg-[#1C3C85]/5">
             TESTIMONIALS
           </span>
           <h2 className="mt-6 text-4xl font-light hagrid leading-tight text-white md:text-5xl">
-            Client Voices | <span className="text-gold-soft font-normal">Trusted, quietly.</span>
+            Client Voices | <span className="blue-wave-2 font-normal">Trusted, quietly.</span>
           </h2>
         </div>
-        <div className="relative mt-16 overflow-hidden">
-
-          <div className="flex animate-testimonials gap-8">
-
-            {[...testimonials, ...testimonials].map((item, index) => (
-
-              <div
-                key={index}
-                className="min-w-[420px] rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#D4AF37]/30 hover:bg-white/10"
-              >
-                <div className="flex gap-1 text-[#D4AF37] text-sm">
-                  ★★★★★
-                </div>
-
-                <blockquote className="mt-6 font-serif text-2xl leading-relaxed text-white">
-
-                  "{item.quote}"
-
-                </blockquote>
-
-                <div className="mt-10">
-
-                  <h4 className="font-semibold text-white">
-                    {item.author}
-                  </h4>
-
-                  <p className="mt-1 text-sm uppercase tracking-[0.25em] text-white/50">
-                    {item.location}
-                  </p>
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
+        <div className="relative mt-10 sm:mt-16 overflow-hidden">
+  <div className="flex animate-testimonials gap-4 sm:gap-6 md:gap-8">
+    {[...testimonials, ...testimonials].map((item, index) => (
+      <div
+        key={index}
+        // min-w-[85vw] ensures the card fits nicely on mobile screens 
+        // while leaving a little peek of the next card.
+        // shrink-0 prevents flexbox from squishing the cards.
+        className="shrink-0 min-w-[85vw] sm:min-w-[320px] md:min-w-[350px] rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 md:p-10 backdrop-blur-xl transition-all duration-500 hover:border-[#D4AF37]/30 hover:bg-white/10"
+      >
+        <div className="flex gap-1 blue-wave-2 text-xs sm:text-sm">
+          ★★★★★
         </div>
+
+        <blockquote className="mt-4 sm:mt-6 font-serif text-lg sm:text-xl md:text-2xl leading-relaxed text-white">
+          "{item.quote}"
+        </blockquote>
+
+        <div className="mt-6 sm:mt-8 md:mt-10">
+          <h4 className="font-semibold text-white text-sm sm:text-base">
+            {item.author}
+          </h4>
+
+          <p className="mt-1 text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white/50">
+            {item.location}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
       </section>
 
       {/* CTA */}
@@ -588,9 +580,9 @@ function Home() {
           <span className="text-xs uppercase tracking-[0.25em] text-[#1C3C85] font-semibold bg-[#1C3C85]/10 px-3.5 py-1.5 rounded-xl border border-[#1C3C85]/20">
             BEGIN THE CONVERSATION
           </span>
-          <h2 className="mt-6 text-4xl font-light hagrid leading-tight text-foreground md:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-2xl font-light hagrid leading-tight text-foreground md:text-5xl lg:text-6xl">
             A private consultation, <br />
-            on your <span className="text-gold font-normal">schedule.</span>
+            on your <span className="blue-wave-3 font-normal">schedule.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
             Share your requirement in confidence. Our senior consultants will
@@ -599,11 +591,11 @@ function Home() {
           <div className="mt-10 flex flex-wrap justify-center gap-5">
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 rounded-xl bg-[#1C3C85] px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#2a4aa3] shadow-md hover:shadow-xl"
+              className="group inline-flex items-center gap-3 rounded-xl bg-[#1C3C85] px-8 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#2a4aa3] shadow-md hover:shadow-xl"
             >
               Schedule Consultation
               <svg
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                className="hidden md:block h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -618,11 +610,11 @@ function Home() {
             </Link>
             <Link
               to="/contact"
-              className="group inline-flex items-center gap-3 rounded-xl border border-[#1C3C85]/30 bg-white/50 backdrop-blur px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#1C3C85] transition-all duration-300 hover:-translate-y-1 hover:bg-[#1C3C85] hover:text-white hover:border-[#1C3C85]"
+              className="group inline-flex items-center gap-3 rounded-xl border border-[#1C3C85]/30 bg-white/50 backdrop-blur px-8 py-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#1C3C85] transition-all duration-300 hover:-translate-y-1 hover:bg-[#1C3C85] hover:text-white hover:border-[#1C3C85]"
             >
               Submit Requirement
               <svg
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                className="hidden md:block h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"

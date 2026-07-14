@@ -334,6 +334,17 @@ html {
   font-family: 'DXRigraf-Thin', sans-serif;
 }
 
+.blue-wave-1 {
+  color: #4C4C4C;
+}
+
+.blue-wave-2 {
+  color: #BCBCBC;
+}
+
+.blue-wave-3 {
+  color: #1C3C85;
+}
 
 @keyframes testimonials {
   from {
