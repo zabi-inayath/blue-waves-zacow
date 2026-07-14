@@ -2,10 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { FiArrowUpRight, FiCheck } from "react-icons/fi";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { LuBuilding2, LuKey, LuPalette, LuHandshake, LuChrome } from "react-icons/lu";
-import heroImg from "../assets/hero.jpg";
+import heroImg from "/Gemini_Generated_Image_2vggo02vggo02vgg.png";
 import interior1 from "../assets/interior-1.jpg";
-import property1 from "../assets/property-1.jpg";
-import property2 from "../assets/property-2.jpg";
+import property1 from "/Gemini_Generated_Image_clbb5zclbb5zclbb.png";
+import property2 from "/Gemini_Generated_Image_6ydr156ydr156ydr.png";
 import interior3 from "../assets/interior-3.jpg";
 import { Section, SectionHeader } from "../components/site/Section";
 import { HiLocationMarker } from "react-icons/hi";
@@ -251,7 +251,7 @@ function Home() {
 
             {/* Floating Quote */}
 
-            <div className="hidden md:block absolute bottom-4 left-4 right-4 md:right-auto md:bottom-10 md:left-10 max-w-md rounded-2xl md:rounded-3xl border border-white/10 bg-white/10 p-5 md:p-8 backdrop-blur-xl">
+            <div className="hidden md:block absolute bottom-4 left-4 right-4 md:left-auto md:bottom-10 md:left-10 max-w-md rounded-2xl md:rounded-3xl border border-white/10 bg-white/10 p-5 md:p-8 backdrop-blur-xl">
               <p className="font-serif text-xl md:text-2xl italic text-white">
                 "Trust is the ultimate luxury."
               </p>
