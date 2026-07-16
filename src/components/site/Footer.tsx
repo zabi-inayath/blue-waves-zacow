@@ -113,11 +113,8 @@ export function Footer() {
                   <FiPhone size={14} />
                 </div>
                 <div className="flex flex-col gap-1.5 text-bone/70 pt-0.5">
-                  <a href="tel:+919841603932" className="hover:text-white transition-colors">
-                    Eliyas: +91 98416 03932
-                  </a>
-                  <a href="tel:+919789811111" className="hover:text-white transition-colors">
-                    Naina Mohamed: +91 97898 11111
+                  <a href="tel:+919363675069" className="hover:text-white transition-colors">
+                    +91 93636 75069
                   </a>
                 </div>
               </li>
