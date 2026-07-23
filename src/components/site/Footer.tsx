@@ -105,7 +105,7 @@ export function Footer() {
                   <FiMapPin size={14} />
                 </div>
                 <span className="text-bone/70 leading-relaxed pt-0.5">
-                  No. 11/38 Status Quo Building, Strerling Road,<br />Nungambakkum, Chennai - 600 0034
+                  No. 11/38 Status Quo Building, Sterling Road,<br />Nungambakkam, Chennai - 600034
                 </span>
               </li>
               <li className="flex gap-4 items-start">
@@ -143,7 +143,7 @@ export function Footer() {
       </div>
 
       <a
-        href="https://wa.me/919000000000"
+        href="https://wa.me/919363675069"
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"

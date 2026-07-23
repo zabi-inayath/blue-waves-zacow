@@ -30,69 +30,56 @@ function Contact() {
 
   return (
     <>
-      <Section className="pt-40 md:pt-48">
-        <div className="grid gap-16 md:grid-cols-12">
-          <div className="md:col-span-7">
-            <div className="eyebrow">Contact</div>
-            <h1 className="mt-4 font-serif text-5xl leading-[1.05] md:text-7xl">
-              Begin the<br />
-              <span className="italic text-gold">conversation.</span>
-            </h1>
-            <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-              Whether you're looking for a home, an investment, or you'd like to
-              list your property — we'd be pleased to hear from you.
-            </p>
-          </div>
-
-          <aside className="space-y-6 md:col-span-4 md:col-start-9">
-            <InfoRow icon={FiMapPin} title="Address">
-              No. 11/38 Status Quo Building,<br />Strerling Road, Nungambakkum,<br />Chennai - 600 0034
-            </InfoRow>
-            <InfoRow icon={FiPhone} title="Call">
-              <div className="flex flex-col gap-2">
-                <a href="tel:+919841603932" className="hover:text-gold">
-                  Eliyas: +91 98416 03932
-                </a>
-                <a href="tel:+919789811111" className="hover:text-gold">
-                  Naina Mohamed: +91 97898 11111
-                </a>
-              </div>
-            </InfoRow>
-            <InfoRow icon={FaWhatsapp} title="WhatsApp">
-              <div className="flex flex-col gap-2">
-                <a
-                  href="https://wa.me/919841603932"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-gold"
-                >
-                  Eliyas: +91 98416 03932
-                </a>
-                <a
-                  href="https://wa.me/919789811111"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-gold"
-                >
-                  Naina Mohamed: +91 97898 11111
-                </a>
-              </div>
-            </InfoRow>
-            <InfoRow icon={FiMail} title="Email">
-              <a href="mailto:bluewaveestates06@gmail.com" className="hover:text-gold break-all">
-                bluewaveestates06@gmail.com
-              </a>
-            </InfoRow>
-            <InfoRow icon={FiClock} title="Hours">
-              Monday – Saturday · 9:30 to 7:00
-            </InfoRow>
-          </aside>
+      {/* Premium Hero */}
+      <section className="bg-gradient-to-br from-[#1C3C85] to-[#0E1F47] text-bone pt-40 pb-32 md:pt-52 md:pb-40 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, #ffffff 0%, transparent 40%)' }}></div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+          <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-8 bg-white/10 px-5 py-2 rounded-full border border-white/20 backdrop-blur-sm">
+            Get in touch
+          </span>
+          <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-light hagrid leading-[1.05] text-white max-w-4xl mx-auto">
+            Begin the <br className="hidden md:block"/>
+            <span className="italic text-gold">conversation.</span>
+          </h1>
+          <p className="mt-8 max-w-2xl text-lg text-white/70 mx-auto leading-relaxed">
+            Whether you're looking for a home, an investment, or you'd like to
+            list your property — our senior consultants are at your service.
+          </p>
         </div>
-      </Section>
+      </section>
 
-      <Section className="pt-0">
-        <div className="border border-border">
-          <div className="grid grid-cols-2 border-b border-border">
+      {/* Floating Info Cards */}
+      <section className="px-6 lg:px-8 -mt-20 relative z-20 pb-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <InfoCard icon={FiMapPin} title="Our Office">
+            No. 11/38 Status Quo Building,<br />Sterling Road, Nungambakkam,<br />Chennai - 600034
+          </InfoCard>
+          <InfoCard icon={FiPhone} title="Direct Line">
+            <div className="flex flex-col gap-1.5">
+              <a href="tel:+919363675069" className="hover:text-[#1C3C85] transition-colors">+91 93636 75069</a>
+            </div>
+          </InfoCard>
+          <InfoCard icon={FaWhatsapp} title="WhatsApp">
+            <div className="flex flex-col gap-1.5">
+              <a href="https://wa.me/919363675069" target="_blank" rel="noreferrer" className="hover:text-[#1C3C85] transition-colors">+91 93636 75069</a>
+            </div>
+          </InfoCard>
+          <InfoCard icon={FiMail} title="Email & Hours">
+            <div className="flex flex-col gap-3">
+              <a href="mailto:bluewaveestates06@gmail.com" className="hover:text-[#1C3C85] transition-colors break-all">bluewaveestates06@gmail.com</a>
+              <div className="flex items-center gap-2 text-muted-foreground mt-2">
+                <FiClock className="text-[#1C3C85]" /> Mon – Sat · 9:30 to 7:00
+              </div>
+            </div>
+          </InfoCard>
+        </div>
+      </section>
+
+      {/* Forms Section */}
+      <Section className="bg-[#f7f9fc] py-24">
+        <div className="max-w-5xl mx-auto">
+          {/* Custom Tabs */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
             <TabBtn active={tab === "lead"} onClick={() => setTab("lead")}>
               Looking for a Property
             </TabBtn>
@@ -100,40 +87,48 @@ function Contact() {
               List Your Property
             </TabBtn>
           </div>
-          <div className="p-8 md:p-14">
-            <div className="mb-10 max-w-xl">
-              <div className="eyebrow">
-                {tab === "lead" ? "Enquiry" : "Owner Submission"}
-              </div>
-              <h2 className="mt-3 font-serif text-3xl leading-tight md:text-4xl">
+
+          <div className="bg-white rounded-[2rem] shadow-xl border border-gray-100 p-8 md:p-16 relative overflow-hidden">
+            {/* Decorative background shape */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#1C3C85]/5 rounded-bl-[100%] -z-10 pointer-events-none"></div>
+            
+            <div className="mb-12 text-center max-w-2xl mx-auto">
+              <span className="inline-block text-[#1C3C85] font-semibold tracking-[0.2em] uppercase text-sm mb-4">
+                {tab === "lead" ? "Enquiry Form" : "Owner Submission"}
+              </span>
+              <h2 className="font-light hagrid text-4xl md:text-5xl leading-tight text-foreground">
                 {tab === "lead"
                   ? "Tell us about your dream property."
                   : "Sell or rent, with a considered plan."}
               </h2>
             </div>
-            {tab === "lead" ? <LeadForm /> : <OwnerForm />}
+            
+            <div>
+               {tab === "lead" ? <LeadForm /> : <OwnerForm />}
+            </div>
           </div>
         </div>
       </Section>
 
-      <Section className="pt-0">
-        <div className="overflow-hidden border border-border">
+      {/* Map Section */}
+      <section className="px-6 lg:px-8 pb-24 bg-[#f7f9fc]">
+        <div className="max-w-7xl mx-auto rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 h-[500px]">
           <iframe
             title="Blue Wave Estate — Chennai"
-            src="https://www.google.com/maps?q=Boat+Club+Road+Chennai&output=embed"
+            src="https://www.google.com/maps?q=No.+11%2F38+Status+Quo+Building%2C+Sterling+Road%2C+Nungambakkam%2C+Chennai+-+600034&output=embed"
             width="100%"
-            height="450"
-            style={{ border: 0, filter: "grayscale(1) contrast(0.9)" }}
+            height="100%"
+            style={{ border: 0, filter: "grayscale(0.8) contrast(1.1) opacity(0.9)" }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-      </Section>
+      </section>
     </>
   );
 }
 
-function InfoRow({
+function InfoCard({
   icon: Icon,
   title,
   children,
@@ -143,11 +138,13 @@ function InfoRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="grid grid-cols-[24px_1fr] items-start gap-4 border-b border-border pb-6">
-      <Icon size={16} className="mt-1 text-gold" />
-      <div>
-        <div className="eyebrow text-foreground/60">{title}</div>
-        <div className="mt-2 text-sm leading-relaxed text-foreground">{children}</div>
+    <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+      <div className="w-14 h-14 rounded-full bg-[#1C3C85]/5 flex items-center justify-center mb-6 text-[#1C3C85]">
+        <Icon size={24} />
+      </div>
+      <h3 className="font-semibold poppins text-lg text-foreground mb-4">{title}</h3>
+      <div className="text-sm leading-relaxed text-muted-foreground mt-auto">
+        {children}
       </div>
     </div>
   );
@@ -165,10 +162,10 @@ function TabBtn({
   return (
     <button
       onClick={onClick}
-      className={`px-6 py-5 text-[11px] uppercase tracking-[0.22em] transition-colors ${
+      className={`px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] transition-all duration-300 rounded-full border-2 ${
         active
-          ? "bg-ink text-bone"
-          : "bg-background text-foreground/60 hover:text-foreground"
+          ? "bg-[#1C3C85] border-[#1C3C85] text-white shadow-lg scale-105"
+          : "bg-transparent border-gray-200 text-foreground/60 hover:border-[#1C3C85]/30 hover:text-[#1C3C85]"
       }`}
     >
       {children}

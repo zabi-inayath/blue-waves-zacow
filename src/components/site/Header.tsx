@@ -92,7 +92,7 @@ export function Header() {
         </nav>
 
         <Link
-          to="tel:+919841603932"
+          to="tel:+919363675069"
           className={`group hidden items-center gap-3 rounded-full border border-[#1C3C85]/30 bg-white/5 px-5 py-3 backdrop-blur-md transition-all duration-300 hover:border-[#1C3C85] hover:bg-[#1C3C85] ${scrolled ? 'text-black' : 'text-white'} lg:inline-flex`}
         >
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1C3C85] text-white transition-transform duration-300 group-hover:scale-110">
@@ -104,7 +104,7 @@ export function Header() {
               Call Now
             </span>
             <span className="text-sm font-semibold tracking-wide">
-              +91 98416 03932
+              +91 93636 75069
             </span>
           </div>
         </Link>

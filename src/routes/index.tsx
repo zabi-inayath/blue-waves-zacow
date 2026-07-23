@@ -572,71 +572,71 @@ function Home() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* TNRERA */}
-          <div className="rounded-2xl border border-border/50 bg-white overflow-hidden transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+          <div className="rounded-xl border border-border/50 bg-white overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
             <img
               src="/TNRERA.jpg"
               alt="TNRERA Registered"
-              className="w-full h-52 object-cover"
+              className="w-full h-40 object-cover"
             />
 
-            <div className="p-8">
-              <h3 className="font-semibold poppins text-lg text-foreground mb-4">
+            <div className="p-6">
+              <h3 className="font-semibold poppins text-base text-foreground mb-3">
                 TNRERA Registered
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                We are a TNRERA Registered Real Estate Agent, committed to conducting
-                every real estate transaction with transparency, integrity, and full
-                compliance with the Real Estate (Regulation and Development) Act (RERA).
-                Our registration reflects our commitment to ethical practices and
-                protecting the interests of our clients.
+              <p className="text-sm text-muted-foreground leading-6">
+                We are a TNRERA Registered Real Estate Agent, committed to conducting every
+                real estate transaction with transparency, integrity, and full compliance
+                with the Real Estate (Regulation and Development) Act (RERA). Our
+                registration reflects our commitment to ethical practices and protecting
+                the interests of our clients.
               </p>
             </div>
           </div>
 
           {/* REAP */}
-          <div className="rounded-2xl border border-border/50 bg-white overflow-hidden transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+          <div className="rounded-xl border border-border/50 bg-white overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
             <img
               src="/ireap.jpg"
               alt="REAP Member"
-              className="w-full h-52 object-cover"
+              className="w-full h-40 object-cover"
             />
 
-            <div className="p-8">
-              <h3 className="font-semibold poppins text-lg text-foreground mb-4">
+            <div className="p-6">
+              <h3 className="font-semibold poppins text-base text-foreground mb-3">
                 Member – REAP
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-6">
                 We are a proud member of the Real Estate Agents Association of India
-                (REAP), a professional association dedicated to promoting ethical
-                business practices, industry collaboration, continuous learning, and
-                higher standards in the real estate profession.
+                (REAP), a professional association dedicated to promoting ethical business
+                practices, industry collaboration, continuous learning, and higher
+                standards in the real estate profession.
               </p>
             </div>
           </div>
 
           {/* NAR India */}
-          <div className="rounded-2xl border border-border/50 bg-white overflow-hidden transition-all hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
+          <div className="rounded-xl border border-border/50 bg-white overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-[#1C3C85]/20 hover:-translate-y-1">
             <img
               src="/NARLogo.png"
               alt="NAR India Member"
-              className="w-full h-52 object-cover"
+              className="w-full h-42 object-cover"
             />
 
-            <div className="p-8">
-              <h3 className="font-semibold poppins text-lg text-foreground mb-4">
+            <div className="p-6">
+              <h3 className="font-semibold poppins text-base text-foreground mb-3">
                 Member – NAR India
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-6">
                 As a member of NAR India (National Association of Realtors – India), we
                 are part of a nationwide network of trusted real estate professionals
                 committed to integrity, professionalism, and a strict code of ethics.
-                This enables us to provide our clients with reliable advice, wider
-                market access, and high-quality service.
+                This enables us to provide our clients with reliable advice, wider market
+                access, and high-quality service.
               </p>
             </div>
           </div>
